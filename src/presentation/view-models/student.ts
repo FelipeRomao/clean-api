@@ -7,9 +7,9 @@ export class StudentViewModel {
 
   static map(entity: Student): StudentViewModel {
     return {
-      ...entity,
       display_name: entity.name,
       contact: entity.email,
+      phones: entity.phones,
     };
   }
 
