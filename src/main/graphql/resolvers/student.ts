@@ -4,6 +4,6 @@ import { makeLoadStudentController } from "@/main/factories";
 export default {
   Query: {
     students: async (): Promise<any> =>
-      adaptResolver(makeLoadStudentController()),
+      await adaptResolver(makeLoadStudentController()),
   },
 };
